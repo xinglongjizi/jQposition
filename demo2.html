@@ -1,0 +1,20 @@
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var left = $("#div2").position().left;  //21.11111
+                var top = $("#div2").position().top;    //33.33333
+                alert("距离父元素顶部的距离是：" + left + "; 距离父元素左边的距离是:" + top);
+        })
+    </script>
+</head>
+<body>
+    <div id="div1" style="width:200px;height:400px;border:10px solid #000; padding:20px 20px; margin:30px 30px; position:relative;">
+
+        <div id="div2" style="width:100px;height:200px; background:Green; position:absolute; left:22px; top:34px;"></div>
+
+
+    </div>
+</body>

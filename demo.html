@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQ之元素位置</title>
+</head>
+<body>
+
+<style>
+	*{padding:0;margin:0;}
+	.box{
+		width: 400px;height:200px;border:1px solid red;margin:100px auto;
+		padding: 50px;
+	}
+	.inner{
+		width:200px;height:100px;background:blue;
+	}
+</style>
+
+<div class="box">
+
+	<div class="inner"></div>
+
+</div>
+
+<h2>position()获取匹配元素在相对父元素的偏移量，也就是说，匹配元素相对于父元素绝对定位。否则返回相对于body的left或top距离返回一个对象，包括两个属性。left:相对父元素最左边的距离。top:相对父元素最右边的距离。只对可见元素有效。</h2>
+
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+
+alert( $(".inner").position().left );
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
